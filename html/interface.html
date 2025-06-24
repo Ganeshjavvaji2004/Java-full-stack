@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flipkart Fashion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f1f3f6;
+    }
+    .banner {
+      background: url('https://via.placeholder.com/1200x300?text=Fashion+Sale+Banner') no-repeat center center;
+      background-size: cover;
+      height: 300px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    .card img {
+      height: 250px;
+      object-fit: cover;
+    }
+    .price {
+      font-weight: bold;
+      color: #388e3c;
+    }
+    .category-title {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .cart-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #2874f0;
+      color: white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .cart-btn:hover {
+      background-color: #0056b3;
+    }
+    .buy-btn {
+      background-color: #f8c000;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-4">
+    <!-- Banner -->
+    <div class="banner"></div>
+
+    <!-- Men's Fashion -->
+    <h4 class="category-title">Men's Fashion</h4>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card position-relative">
+          <img src="https://via.placeholder.com/300x250?text=Men+T-Shirt" class="card-img-top" alt="Men T-Shirt">
+          <div class="card-body">
+            <h6 class="card-title">Men's Cotton T-Shirt</h6>
+            <p class="price">₹499</p>
+            <button class="btn btn-sm buy-btn">Buy Now <i class="bi bi-bag-check"></i></button>
+          </div>
+          <div class="cart-btn">
+            <i class="bi bi-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card position-relative">
+          <img src="https://via.placeholder.com/300x250?text=Men+Jeans" class="card-img-top" alt="Men Jeans">
+          <div class="card-body">
+            <h6 class="card-title">Regular Fit Jeans</h6>
+            <p class="price">₹999</p>
+            <button class="btn btn-sm buy-btn">Buy Now <i class="bi bi-bag-check"></i></button>
+          </div>
+          <div class="cart-btn">
+           </div>
+        </div>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+
+    <!-- Women's Fashion -->
+    <h4 class="category-title">Women's Fashion</h4>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card position-relative">
+          <img src="https://via.placeholder.com/300x250?text=Women+Kurti" class="card-img-top" alt="Women Kurti">
+          <div class="card-body">
+            <h6 class="card-title">Floral Printed Kurti</h6>
+            <p class="price">₹799</p>
+            <button class="btn btn-sm buy-btn">Buy Now <i class="bi bi-bag-check"></i></button>
+          </div>
+          <div class="cart-btn">
+            <i class="bi bi-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card position-relative">
+          <img src="https://via.placeholder.com/300x250?text=Women+Dress" class="card-img-top" alt="Women Dress">
+          <div class="card-body">
+            <h6 class="card-title">A-Line Dress</h6>
+            <p class="price">₹1199</p>
+            <button class="btn btn-sm buy-btn">Buy Now <i class="bi bi-bag-check"></i></button>
+          </div>
+          <div class="cart-btn">
+            <i class="bi bi-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
